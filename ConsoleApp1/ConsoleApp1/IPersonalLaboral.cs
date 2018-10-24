@@ -8,7 +8,7 @@ namespace ConsoleApp1
 {
     interface IPersonalLaboral
     {
-        void Mostrar();
+        string Mostrar();
         bool Jubilable();
         double CalculaSueldo();
     }

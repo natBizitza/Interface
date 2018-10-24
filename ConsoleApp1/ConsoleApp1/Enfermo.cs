@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class Enfermo : Sanitario, IPersonalLaboral
+    internal class Enfermo : Sanitario, IPersonalLaboral
     {
         public int Puesto { get; set; }
 
