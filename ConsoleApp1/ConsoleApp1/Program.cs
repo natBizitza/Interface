@@ -10,6 +10,8 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            Medico medico1 = new Medico("1111", "JULIA", 40000, 41, "J",  5);
+            List<Sanitario> sanitario = new List<Sanitario>();
             //get
             //Dni1.Dni;
             //set

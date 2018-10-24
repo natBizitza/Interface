@@ -11,7 +11,7 @@ namespace ConsoleApp1
         public int Puesto { get; set; }
 
         //construtor 
-        public Enfermo()
+        public Enfermo(string dni, string nombre, double sueldoBase, int edad): base (dni, nombre, sueldoBase, edad)
         {
 
         }
@@ -20,13 +20,23 @@ namespace ConsoleApp1
 
         //other methods
 
-        public double CalculaSueldo()
+        public override double CalculaSueldo()
         {
-            return;
+            int mas = 200;
+            return base.CalculaSueldo() + mas;
         }
 
-        public void Mostrar()
+        public override string Mostrar()
         {
+            string result = "";
+
+            if (this.Puesto > 0)
+            {
+                result += "Puesto " + this.Puesto + " ";
+
+            }
+
+            return base.Mostrar() + result;
 
         }
     }
